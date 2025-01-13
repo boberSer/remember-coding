@@ -13,13 +13,14 @@
 ### 1. ui - Здесь мы отображаем нашу фичу. Фича может быть формой, кнопкой, которая выполняет действие, либо отвечает за условное отображение элемента.
 
 пр. (feature "in-stock")
+```
 <span style={{ color: inStock ? 'green' : 'red' }}>
    {inStock ? 'В наличии' : 'Нет в наличии'}
 </span>
-
+```
   
 пр. (feature "add-to-cart")
-
+```
 <template> 
   <button @click={() => addToCart(productId)}>
       Добавить в корзину
@@ -32,3 +33,4 @@ const addToCart = (id) => {
   console.log(`Product ${id} added to cart`);
 };
 </script>
+```
