@@ -18,3 +18,10 @@
 ### 2. api - Здесь указаны функции для именования ваших API маршрутов. (пр. productApi) пример функции - export const getProducts = () => api.get('products')
 ### 3. lib - Здесь указан код для взаимодействия с библиотеками и вспомогательный код. Например validation.js для vee-validate.
 ### 4. config - В этой папке вы можете хранить константы, которые используются в сущности/фичах/виджетах.
+
+## В слайсе (пр. account) данные срезы должны именоваться так:
+
+### export * as `accountStore` from './model'
+### export * as `accountApi` from './api'
+### export * as `accountLib` from './lib'
+### export * as `accountConfig` from './config'

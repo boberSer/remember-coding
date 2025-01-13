@@ -1,4 +1,4 @@
-import { createEnum } from '../helpers/create-enum.js'
+import { createEnum } from '../helpers'
 
 export const Routes = createEnum({
   home: {

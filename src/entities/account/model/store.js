@@ -6,5 +6,10 @@ export const useStore = defineStore('account-store', () => {
 
   const login = () => (token.value = 'f;kfd;s;lk')
 
-  return { token, login }
+  const logout = () => {
+    localStorage.removeItem('token')
+    token.value = null
+  }
+
+  return { token, login, logout }
 })
