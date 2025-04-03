@@ -1,8 +1,6 @@
-import { createEnum } from '../helpers'
-
-export const Routes = createEnum({
-  home: {
+export const Routes = {
+  landing: {
     path: '/',
-    name: 'home',
+    name: 'landing',
   },
-})
+}
