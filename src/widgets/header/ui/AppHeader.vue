@@ -1,6 +1,6 @@
 <template>
   <header>
-    <router-link :to="Routes.home.path">шапка</router-link>
+    <router-link :to="Routes.landing.path">шапка</router-link>
   </header>
 </template>
 
