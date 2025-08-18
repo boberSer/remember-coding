@@ -3,4 +3,8 @@ export const Routes = {
     path: '/',
     name: 'landing',
   },
+  home: {
+    path: '/home',
+    name: 'home',
+  },
 }

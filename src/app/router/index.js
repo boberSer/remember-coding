@@ -8,6 +8,11 @@ const routes = [
     path: Routes.landing.path,
     component: () => import('@/pages/landing-page/LandingPage.vue'),
   },
+  {
+    name: Routes.home.name,
+    path: Routes.home.path,
+    component: () => import('@/pages/home-page/HomePage.vue'),
+  },
 ]
 
 export const router = createRouter({
