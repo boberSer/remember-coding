@@ -4,7 +4,7 @@
       <div class="header__container">
         <router-link class="header__title" to="home">SHOP.CO</router-link>
         <div class="header__buttons">
-          <a href="#">Shop</a>
+          <router-link to="shop">Shop</router-link>
           <a href="#">On Sale</a>
           <a href="#">New Arrivals</a>
           <a href="#">Brands</a>
@@ -33,7 +33,7 @@ const search = ref('Search for product...')
 .header {
   @apply max-h-24 w-full flex justify-center items-center font-semibold;
   &__container {
-    @apply flex gap-16 mt-4 py-5 items-center bg-white rounded-t-3xl px-10;
+    @apply flex gap-16 mt-4 py-5 items-center bg-white rounded-3xl mb-5 px-10;
   }
   &__title {
     @apply text-xl;

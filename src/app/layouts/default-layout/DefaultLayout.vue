@@ -15,7 +15,7 @@ import { AppHeader } from '@/shared'
 
 <style scoped lang="scss">
 .default-layout {
-  @apply flex flex-col min-h-screen bg-gray-200;
+  @apply flex flex-col min-h-screen bg-gray-200 pt-10;
 }
 
 .main-content {

@@ -11,7 +11,12 @@ const routes = [
   {
     name: Routes.home.name,
     path: Routes.home.path,
-    component: () => import('@/pages/home-page/HomePage.vue'),
+    component: () => import('@/pages/landing-page/LandingPage.vue'),
+  },
+  {
+    name: Routes.shop.name,
+    component: () => import('@/pages/shop-page/ShopPage.vue'),
+    path: Routes.shop.path,
   },
 ]
 

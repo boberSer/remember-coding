@@ -7,4 +7,8 @@ export const Routes = {
     path: '/home',
     name: 'home',
   },
+  shop: {
+    path: '/shop',
+    name: 'shop',
+  },
 }
