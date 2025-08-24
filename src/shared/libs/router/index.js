@@ -11,4 +11,8 @@ export const Routes = {
     path: '/shop',
     name: 'shop',
   },
+  category: {
+    path: '/style/:style',
+    name: 'category',
+  },
 }

@@ -2,9 +2,9 @@
   <header>
     <div class="header">
       <div class="header__container">
-        <router-link class="header__title" to="home">SHOP.CO</router-link>
+        <router-link class="header__title" to="/">SHOP.CO</router-link>
         <div class="header__buttons">
-          <router-link to="shop">Shop</router-link>
+          <router-link to="/shop">Shop</router-link>
           <a href="#">On Sale</a>
           <a href="#">New Arrivals</a>
           <a href="#">Brands</a>

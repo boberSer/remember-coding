@@ -3,8 +3,8 @@
     <div class="shop-page__container">
       <span class="shop-page__title">BROWSE BY DRESS STYLE</span>
       <div class="shop-page__card-section">
-        <template v-for="({ title, description }, n) in settings" :key="n">
-          <product-card-item :title="title" :description="description" />
+        <template v-for="({ title, description, styleKey }, n) in settings" :key="n">
+          <dress-style-card :title="title" :description="description" :style-key="styleKey" />
         </template>
       </div>
     </div>
@@ -12,49 +12,48 @@
 </template>
 
 <script setup>
-import { ProductCardItem } from '@/widgets'
+import { DressStyleCard } from '@/widgets'
 import { computed } from 'vue'
 const settings = computed(() => [
   {
     title: 'CASUAL',
     description: 'Just buy it',
-    // func: () => routerProject('project-settings'),
+    styleKey: 'casual',
   },
   {
     title: 'FORMAL',
     description: 'Just buy it',
-    // func: openAddMembers,
+    styleKey: 'formal',
   },
-
   {
     title: 'SPORT',
     description: 'Just buy it',
-    // func: () => routerProject('project-page'),
+    styleKey: 'sport',
   },
   {
     title: 'PARTY',
     description: 'Just buy it',
-    // func: confirmDeletion,
+    styleKey: 'party',
   },
   {
     title: 'BUSINESS',
     description: 'Just buy it',
-    // func: () => routerProject('project-page'),
+    styleKey: 'business',
   },
   {
-    title: 'BEATCH',
+    title: 'BEACH',
     description: 'Just buy it',
-    // func: () => routerProject('project-page'),
+    styleKey: 'beach',
   },
   {
     title: 'WINTER',
     description: 'Just buy it',
-    // func: () => routerProject('project-page'),
+    styleKey: 'winter',
   },
   {
     title: 'STREETWEAR',
     description: 'Just buy it',
-    // func: () => routerProject('project-page'),
+    styleKey: 'streetwear',
   },
 ])
 </script>

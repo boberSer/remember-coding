@@ -1,4 +1,4 @@
-<template>gfihjonkawdml</template>
+<template>Aside</template>
 
 <script setup></script>
 

@@ -15,8 +15,14 @@ const routes = [
   },
   {
     name: Routes.shop.name,
-    component: () => import('@/pages/shop-page/ShopPage.vue'),
     path: Routes.shop.path,
+    component: () => import('@/pages/shop-page/ShopPage.vue'),
+  },
+  {
+    name: Routes.category.name,
+    path: Routes.category.path,
+    component: () => import('@/pages/style-category-page/StyleCategoryPage.vue'),
+    props: true,
   },
 ]
 

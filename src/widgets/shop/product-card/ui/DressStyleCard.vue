@@ -1,5 +1,5 @@
 <template>
-  <div class="product-card">
+  <div class="product-card" @click="goToCategory">
     <div class="product-card__container">
       <div class="product-card__title">{{ title }}</div>
       <div class="product-card__description">{{ description }}</div>
@@ -8,7 +8,10 @@
 </template>
 
 <script setup>
-defineProps({
+import { router } from '@/app/router/index.js'
+import { Routes } from '@/shared'
+
+const props = defineProps({
   title: {
     type: String,
     default: '',
@@ -17,7 +20,18 @@ defineProps({
     type: String,
     default: '',
   },
+  styleKey: {
+    type: String,
+    required: true,
+  },
 })
+
+const goToCategory = () => {
+  router.push({
+    name: Routes.category.name,
+    params: { style: props.styleKey.toLowerCase() },
+  })
+}
 </script>
 
 <style lang="scss">
